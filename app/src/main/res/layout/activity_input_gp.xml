@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputGPA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/NameTV"
+            android:layout_width="412dp"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:text="Please Enter a Grade"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <EditText
+            android:id="@+id/EnterGradeET"
+            android:layout_width="409dp"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:hint="Enter Your Grade"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="142dp">
+
+            <Button
+                android:id="@+id/EnterGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onEnterbuttonPRessed"
+                android:text="Enter Grade" />
+
+            <Button
+                android:id="@+id/Calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCalculateButtonPressed"
+                android:text="Calculate" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="410dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Your Grades"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+            <TextView
+                android:id="@+id/Grades"
+                android:layout_width="391dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="273dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="392dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="Your GPA"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="488dp" />
+
+            <TextView
+                android:id="@+id/GPA"
+                android:layout_width="389dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="565dp" />
+
+            <Button
+                android:id="@+id/Clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClearButtonPressed"
+                android:text="Clear Grades" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
